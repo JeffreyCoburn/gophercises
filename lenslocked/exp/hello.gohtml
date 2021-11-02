@@ -1,0 +1,10 @@
+<h1>Hello, {{.Name}}!</h1>
+<p>Today is {{.Weekday}}.</p>
+<p>You are {{.Age}} years old.</p>
+<p>Flavors: {{.Flavors}}</p>
+<p>Prices: {{.Prices}}</p>
+<p>Price of milk: {{.Prices.milk}}</p>
+<p>Price of butter: {{index .Prices "butter"}}</p>
+{{if (eq .Age 1) }}year
+{{ else }}years
+{{end}}
